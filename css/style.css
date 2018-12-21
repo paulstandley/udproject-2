@@ -1,0 +1,351 @@
+ 
+body {
+    margin: 0;
+    background: url("http://res.cloudinary.com/pieol2/image/upload/v1520182769/bGpro.png") 0 0;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem magenta;
+}
+
+/* grid */
+
+.header-1 { grid-area: header1; }
+.header-2 { grid-area: header2; }
+.left-side { grid-area: left; }
+.main-body { grid-area: main; }
+.right-side { grid-area: right; }
+.footer-end { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header1 header1 header2 header2 header2'
+    'left main main main right'
+    'footer footer footer footer footer';
+    grid-gap: 0.6em;
+    padding: 0.1em;
+}
+.grid-container > div {
+    padding: 1em 0;
+}
+
+/* flexbox */
+
+.flex-container-header-1 {
+    display: flex;
+    flex-direction: row;
+}
+  
+.flex-container-header-1 > img {
+    margin: 0.1em;
+}
+
+.flex-container-header-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+  
+.flex-container-header-2 > img {
+    margin: 0.1em;
+}
+
+.flex-container-main-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+  
+.flex-container-main-body > iframe {
+    width: 86%;
+    height: 34rem;
+    margin: 1rem;
+}
+
+.main-body {
+    color: rgb(25, 0, 167);
+    line-height: 1rem;
+    font-family: Tahoma, Georgia;
+    font-size: 1.1rem;
+}
+
+.flex-container-footer-icon {
+    display: flex;
+    flex-direction: row;
+}
+  
+.flex-container-footer-icon > img {
+    margin: 0.8rem;
+    padding: 1rem;
+}
+
+.icon-class {
+    width: 18%;
+}
+
+#profilePick {
+    border-radius: 7.2rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+#iconTag {
+    width: 3rem;
+    height: 3rem;
+}
+
+#headerTag {
+    width: 12rem;
+    height: 4rem;
+}
+
+#footerTag {
+    width: 100%;
+    height: 3rem;
+}
+
+#template {
+    background: rgba(95, 158, 160, 0.08);
+    color: rgb(76, 7, 133);
+    font-family: Georgia, Calibri;
+}
+
+#h1Id {
+    font-size: 1.4rem;
+}
+
+#h2Id {
+    font-size: 1rem;
+}
+
+#button {
+    background-color: red;
+    color: snow;
+    border-radius: 33px;
+    font-size: 0.8rem;
+    padding: 0.9rem;
+}
+#button:hover {
+    background-color: snow;
+    color: red;
+    border-radius: 13px;
+    font-size: 1.2rem;
+}
+
+#clickPick {
+    width: 40%;
+}
+
+.hide_object {
+    width: 0px;
+    height: 0px;
+}
+
+@media screen and (min-width: 600px) {
+
+    .flex-container-main-body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+      
+    .flex-container-main-body > iframe {
+        width: 80%;
+        height: 40rem;
+        margin: 1rem;
+    }
+
+    .main-body {
+        color: rgba(78, 53, 218, 0.9);
+        line-height: 1.2rem;
+        font-family: Tahoma, Georgia;
+        font-size: 1.4rem;
+    }
+
+    .icon-class {
+        width: 24%;
+    }
+    
+    #profilePick {
+        border-radius: 7.2rem;
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    #iconTag {
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    #headerTag {
+        width: 21rem;
+        height: 7rem;
+    }
+    
+    #footerTag {
+        width: 60%;
+        height: 3rem;
+        padding-left: 3.4rem;
+    }
+
+    #h1Id {
+        font-size: 1.8rem;
+    }
+    
+    #h2Id {
+        font-size: 1.4rem;
+    }
+    
+    #button {
+        background-color: red;
+        color: snow;
+        border-radius: 33px;
+        padding: 1.4rem;
+    }
+    #button:hover {
+        background-color: snow;
+        color: red;
+        border-radius: 13px;
+        font-size: 1.6rem;
+    }
+
+    #clickPick {
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+
+    .flex-container-main-body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+      
+    .flex-container-main-body > iframe {
+        width: 70%;
+        height: 50rem;
+        margin: 1rem;
+    }
+
+    .main-body {
+        color: rgba(78, 53, 218, 0.9);
+        line-height: 1.2rem;
+        font-family: Tahoma, Georgia;
+        font-size: 1.6rem;
+    }
+
+    #profilePick {
+        border-radius: 7.2rem;
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    #iconTag {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    #headerTag {
+        width: 30rem;
+        height: 10rem;
+    }
+
+    #htmlIcon {
+        padding-left: 7rem;
+        width: 16%;
+    }
+
+    #cssIcon {
+        padding-left: 7rem;
+        width: 16%;
+    }
+
+    #jsIcon {
+        padding-left: 7rem;
+        width: 16%;
+    }
+
+    #footerTag {
+        width: 40%;
+        height: 3rem;
+        padding-left: 16rem;
+    }
+
+    #h1Id {
+        font-size: 2.2rem;
+    }
+    
+    #h2Id {
+        font-size: 1.8rem;
+    }
+
+    #clickPick {
+        width: 20%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .flex-container-main-body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+      
+    .flex-container-main-body > iframe {
+        width: 70%;
+        height: 60rem;
+        margin: 2rem;
+    }
+
+    .main-body {
+        color: rgba(78, 53, 218, 0.9);
+        line-height: 1.4rem;
+        font-size: 2rem;
+    }
+
+    #profilePick {
+        border-radius: 7.2rem;
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    #iconTag {
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    #headerTag {
+        width: 40rem;
+        height: 13rem;
+    }
+
+    #htmlIcon {
+        padding-left: 11rem;
+        width: 16%;
+    }
+
+    #cssIcon {
+        padding-left: 11rem;
+        width: 16%;
+    }
+
+    #jsIcon {
+        padding-left: 11rem;
+        width: 16%;
+    }
+
+    #footerTag {
+        width: 34%;
+        height: 3rem;
+        padding-left: 4.8rem;
+    }
+
+}
